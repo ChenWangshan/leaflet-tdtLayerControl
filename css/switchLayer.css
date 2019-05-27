@@ -1,0 +1,117 @@
+.layer_popup {
+	position: relative;
+}
+
+.layer_popup .layer_switch {
+	padding: 5px;
+	background: #fff;
+	cursor: pointer;
+	box-shadow: rgba(0, 0, 0, .2) 0 2px 4px, rgba(0, 0, 0, .02) 0 -1px 0;
+	border-radius: 4px
+}
+
+.layer_popup .layer_switch i {
+	display: block;
+	width: 22px;
+	height: 22px;
+	background: url(../images/map/switchLayer/icon.png) no-repeat;
+}
+
+.layer_popup .layer_panel {
+	position: absolute;
+	background: #fff;
+	left: -290px;
+	/*top: -152px;*/
+	top:0;
+	padding: 10px;
+	display: block
+}
+
+.layer_popup .layer_panel.inactive {
+	display: none
+}
+
+.layer_popup .layer_panel i.close {
+	float: right;
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	background: url(../images/map/switchLayer/newicon.png) no-repeat -28px -16px;
+	cursor: pointer;
+	opacity: 1;
+
+}
+
+.layer_popup .layer_panel h3 {
+	margin: 0;
+	padding-bottom: 4px;
+	border-bottom: 1px solid #e1e1e1;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.layer_popup .layer_panel .layer-items {
+	margin-top: 10px;
+}
+
+.layer_popup .layer_panel .layer-items a {
+	display: inline-block;
+	width: 74px;
+	text-align: center;
+	text-decoration: none;
+	padding-left: 0px;
+	box-shadow: none;
+}
+
+.layer_popup .layer_panel .layer-items img {
+	width: 74px;
+	height: 54px
+}
+
+.layer_popup .layer_panel .layer-items a.active img {
+	border: 2px solid #4185d0
+}
+
+.layer_popup ul {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.layer_popup ul li {
+	margin: 10px 0;
+	padding: 10px 0 0 0;
+	list-style: none;
+	border-top: 1px solid #e1e1e1;
+	font-size: 14px
+}
+
+.layer_popup ul li i {
+	float: right;
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	margin-top: 4px;
+	background: url(../images/map/switchLayer/newicon.png) no-repeat -109px -14px;
+}
+
+.layer_popup ul li i.active {
+	background-position: -85px -14px;
+}
+
+.legend_name{
+	text-shadow: 2px 2px 2px #cccccc;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 10px 20px;
+}
+.legend_name i{
+	width: 12px;
+	height: 12px;
+	display: inline-block;
+	border-radius: 6px;
+	float: left;
+	margin-top: 3px;
+	margin-right: 3px;
+	background: #ddb926;
+}
