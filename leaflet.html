@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://cdn.bootcss.com/leaflet/1.5.1/leaflet.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/switchLayer.css">
+    <script src="https://cdn.bootcss.com/leaflet/1.5.1/leaflet.js"></script>
+    <script src="./js/switchLayer.js"></script>
+    <style>
+        #mapDiv {
+            height: 500px;
+            padding: 0px;
+            box-shadow: 0px 0px 10px #666666a6;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="mapDiv"></div>
+    <script>
+        var map = L.map('mapDiv', {
+            center: [37.550339, 104.114129],
+            maxZoom: 18,
+            zoom: 3,
+            attributionControl: false
+        });
+
+        $.switchMap(map, {
+            y: -135
+        });
+    </script>
+</body>
+
+</html>
